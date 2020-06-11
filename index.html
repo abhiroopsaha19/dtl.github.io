@@ -1,0 +1,92 @@
+<html> 
+<head>
+<script language="javascript" type="text/javascript">
+    function setVisible(id, visible) {
+        var o = document.getElementById(id);
+        if (typeof(o) != 'undefined') o.style.visibility = visible ? 'visible' : 'hidden';
+        if (typeof(o) == 'undefined') alert("Element with id '" + id + "' not found.");
+    }
+
+    function setDisplay(id, visible) {
+        var o = document.getElementById(id);
+        if (typeof(o) != 'undefined') o.style.display = visible ? 'block' : 'none';
+        if (typeof(o) == 'undefined') alert("Element with id '" + id + "' not found.");
+    }
+    </script>
+</head>
+<style>
+body {
+background-image: url("bg2.jpg");
+background-repeat: no-repeat;
+
+} 
+/* Dropdown Button */
+.dropdown-button {
+    background-color: #0000b3;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-list {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/* Links inside the dropdown */
+.dropdown-list a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: verdana;
+}
+/* Change color of dropdown links on hover */
+.dropdown-list a:hover {
+    background-color: #ddd;
+}
+/* Show the dropdown list on hover */
+.dropdown:hover .dropdown-list {
+    display: block;
+}
+/* Change the background color of the dropdown button when the dropdown list is shown */
+.dropdown:hover .dropdown-button {
+    background-color: #6666ff;
+}
+</style>
+<body>
+</br>
+<center><h1 style="color:white"><marquee> Welcome to the world of softwares</marquee></h1></center>
+</br></br></br></br></br>
+<center><p style="color:white ; font-size:40px">Select the type of software</p></center>
+<center>
+    <div id='dropdown' class='dropdown'>
+        <button class="dropdown-button">General Software List</button>
+		<div class="dropdown-list">
+			<a href="arduino.html">Arduino</a>
+			<a href="#">Proteus</a>
+			<a href="#">Logisim</a>
+		</div>
+    </div>
+
+    <div id='Div2' class='dropdown'>
+        <button class="dropdown-button">Application Software List</button>
+		<div class="dropdown-list">
+			<a href="#">Keil</a>
+			<a href="#">DOSBOX & MASM</a>
+			<a href="#">Vivado</a>
+			<a href="#">Cisco Packet Tracker</a>
+			<a href="#">NS3</a>
+			<a href="#">HFSS</a>
+		</div>
+    </div></center>
+</body>
+</html>
